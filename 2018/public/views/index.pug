@@ -25,14 +25,14 @@ html(lang="en", data-framework="angularjs")
             +ruHeader("ru-navbar-landing")
                 li
                     a(href="/2018/#about", title="RU Hacks About") About
-                li
-                    a(href="/2018/#schedule", title="RU Hacks Schedule") Schedule
-                li
-                    a(href="/2018/#location", title="RU Hacks Location") Location
+                //- li
+                //-     a(href="/2018/#schedule", title="RU Hacks Schedule") Schedule
                 li
                     a(href="/2018/#faq", title="RU Hacks FAQ") FAQ
                 li
-                    a(href="/2018/#sponsors", title="RU Hacks Sponsors and Partners") Sponsors
+                    a(href="/2018/#location", title="RU Hacks Location") Location
+                //- li
+                //-     a(href="/2018/#sponsors", title="RU Hacks Sponsors and Partners") Sponsors
         // ==================== Content ==================== 
         #landing-container(ng-controller="mainCtrl as home")
             // ==================== Cover ==================== 
@@ -62,15 +62,16 @@ html(lang="en", data-framework="angularjs")
             #about.ru-content-white
                 .ru-row
                     .ru-section.ru-section-default
+                        .ru-section-header About RUHacks
                         .ru-section-row.ru-section-row-grid
                             .ru-section-content-col-2
-                                .ru-section-header What is RUHacks?
+                                .ru-section-subheader What is RUHacks?
                                 .ru-section-content.
                                 |RU Hacks is a unique hackathon at Ryerson University, located at the heart of downtown Toronto. This year will
                                 |be our second RU Hacks and we hope you will be here to join us for 36 hours of creativity. Meet new people, learn new skills and showcase your talents. Remember since this is a MLH event, we must follow MLH's     
                                 a(href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf", title="MLH Code of Conduct") Code of Conduct
                             .ru-section-content-col-2
-                                .ru-section-header Why Attend?
+                                .ru-section-subheader Why Attend?
                                 .ru-section-content.
                                 |Be a part of something special - meet other passionate students and let your creativity run wild. This event is the perfect opportunity to showcase your talents. This event is also an opportunity to learn new skills as mentors will be present, and there will be plenty of workshops to help you get your ideas off the ground.
 
@@ -204,7 +205,7 @@ html(lang="en", data-framework="angularjs")
                             .ru-section-content-media.ru-section-content-media-inline
                                 iframe(src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11546.178518710383!2d-79.3772168!3d43.6576417!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfec6b680ae45e7b0!2sGeorge+Vari+Engineering+and+Computing+Centre!5e0!3m2!1sen!2sus!4v1483767485746", style="border: none; height: 45vh; width: 90vw;")
                             br
-                            .ru-section-content.ru-section-content-inline
+                            #location.ru-section-content.ru-section-content-inline
                                 .ru-section-subheader Where is RU Hacks located?
                                 .ru-section-content.
                                     RU Hacks will held at George Vari Engineering and Computing Centre at Ryerson University. It is located at the corner of Gould St. and Church St.
