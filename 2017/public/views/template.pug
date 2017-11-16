@@ -1,0 +1,51 @@
+mixin ruHeader(ctrl, alias)
+    .ru-navbar-container.ru-navbar-fixed-top(ng-controller=ctrl)
+        .ru-navbar
+            .ru-nav-header
+                a.ru-brand(href="/2017") 
+                    img(src="2017/img/logo_50x50.png", title="RU Hacks")
+                    .ru-brand-title RU Hacks
+            .ru-nav-toggle(ng-click=alias+".toggleNav()")
+                - for(var i = 0; i < 3; i++)
+                    span.icon-bar
+            .ru-nav.ru-nav-responsive     
+                ul.ru-navbar-links
+                    block
+        .ru-nav.ru-nav-responsive.ru-nav-mobile(ng-class="{'ru-nav-show': "+alias+".showNav}")
+            ul.ru-navbar-links
+                block
+
+doctype html
+html#top(lang="en", data-framework="angularjs")
+    head
+        include partials/site_info.pug
+        block styles
+        block vars
+
+        title RU Hacks | Ryerson University
+    body(ng-app="app")
+        include partials/visitor_notify.pug
+        if header && headerCtrl && headerCtrlAlias
+            // ==================== Header ==================== 
+            +ruHeader(headerCtrl, headerCtrlAlias)
+                block ruNav
+            .spacer(style="padding-bottom: 100px")
+
+        // ==================== Content ==================== 
+        //-#ru-container(ng-view="")
+        if ctrl
+            #ru-container(ng-controller=ctrl)
+                block ruController
+        else
+            #ru-container
+                block ruContainer
+
+        // ==================== Footer ==================== 
+        #ru-footer.ru-content-blue
+            .text-center
+                small.ru-section-inverted &copy; 2016-2017 RU Hacks. All Rights Reserved
+
+        // ==================== Includes ==================== 
+        include partials/includes.pug
+
+        block scripts

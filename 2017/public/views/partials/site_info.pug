@@ -1,0 +1,48 @@
+- var keywords = "hackathon, Ryerson University, RU Hacks, Toronto, Ryerson"
+- var title = "RU Hacks | Ryerson University"
+- var desc = "RU Hacks, Ryerson University's hackathon will be happening in Spring 2017. Subscribe to our newsletter to stay updated."
+- var img = "https://www.ruhacks.com/2017/img/og_twitter.png?12192016"
+
+meta(http-equiv="Content-Type",     content="text/html; charset=UTF-8")
+meta(http-equiv="X-UA-Compatible",  content="IE=edge")
+meta(name="description",            content=desc)
+meta(name="keywords",               content=keywords)
+meta(name="viewport",               content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0")
+meta(name="theme-color",            content="#004c9b")
+base(href="/2017")
+
+//- ==================== Open Graph ==================== 
+meta(property="og:site_name",       content="RU Hacks | Ryerson University")
+meta(property="og:type",            content="website")
+meta(property="og:url",             content="https://www.ruhacks.com/2017")
+meta(property="og:title",           content=title)
+meta(property="og:description",     content=desc)
+meta(property="og:image",           content=img)
+meta(property="og:image:type",      content="png")
+meta(property="og:image:width",     content="820")
+meta(property="og:image:height",    content="461")
+
+//- ==================== Twitter Handle ==================== 
+meta(name="twitter:card",           content="summary_large_image")
+meta(name="twitter:site",           content="@ruhacks")
+meta(name="twitter:creator",        content="@ruhacks")
+meta(name="twitter:domain",         content="https://www.ruhacks.com/2017")
+meta(name="twitter:title",          content=title)
+meta(name="twitter:description",    content=desc)
+meta(name="twitter:image",          content=img)
+meta(name="twitter:image:alt",      content="RU Hacks happening in Winter 2017")
+meta(name="google-site-verification" content="Xi6KYHT2CnurmWUwAAmUOJn1ORNlmXzgocodPWqxjBI")
+
+//- ==================== Stylesheets ==================== 
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,300italic,400italic,700italic" />
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="{{ '/css/bootstrap.min.css' | prepend: site.baseurl | prepend: site.url }}" />
+  <link rel="stylesheet" type="text/css" href="{{ '/css/base.css' | prepend: site.baseurl | prepend: site.url }}" />
+  <link rel="stylesheet" type="text/css" href="{{ '/css/' | prepend: site.baseurl | prepend: site.url }}{{ site.style.theme | append: '.css' }}" />
+  <!-- link rel="icon" href="/img/favicon.ico" -->
+
+//- ====================Favicon ==================== 
+link(rel="canonical", href="")
+link(rel="icon", type="image/png", href="2017/img/logo_50x50.png?1324")
+//-link(rel="icon", type="image/ico", href="img/favicon.ico")
+script document.querySelector('link[rel=canonical]').href = window.location.href
