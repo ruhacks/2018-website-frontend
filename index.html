@@ -7,20 +7,40 @@
     <meta name="keywords" content="hackathon, Ryerson University, RU Hacks II, Toronto, Ryerson">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
     <meta name="theme-color" content="#004c9b">
-    <base href="/">
-    <link rel="canonical" href="">
+    <!-- ==================== Open Graph ==================== -->
+    <meta property="og:site_name" content="RU Hacks II | Ryerson University">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ruhacks.com/">
+    <meta property="og:title" content="RU Hacks II | Ryerson University">
+    <meta property="og:description" content="RU Hacks II, Ryerson University's hackathon.">
+    <meta property="og:image" content="https://www.ruhacks.com/2017/img/og_twitter.png?12192016">
+    <meta property="og:image:type" content="png">
+    <meta property="og:image:width" content="820">
+    <meta property="og:image:height" content="461">
+    <!-- ==================== Twitter Handle ==================== -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@ruhacks">
+    <meta name="twitter:creator" content="@ruhacks">
+    <meta name="twitter:domain" content="https://www.ruhacks.com/">
+    <meta name="twitter:title" content="RU Hacks II | Ryerson University">
+    <meta name="twitter:description" content="RU Hacks II, Ryerson University's hackathon.">
+    <meta name="twitter:image" content="https://www.ruhacks.com/2017/img/og_twitter.png?12192016">
+    <meta name="twitter:image:alt" content="RU Hacks happening in Winter 2018">
     <link rel="icon" type="image/png" href="img/logo_50x50.png?20180807">
-    <script>document.querySelector('link[rel=canonical]').href = window.location.href</script>
     <title>RU Hacks | Ryerson University</title>
   </head>
-  <body ng-app="app"><!--[if lt IE 8]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-<![endif]-->
+  <body ng-app="app">
+    <!--[if lt IE 8]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
     <!-- ==================== Menu ==================== -->
     <div class="ru-navbar-container ru-navbar-fixed-top" id="ru-nav-scroll" ng-controller="mainCtrl as home">
       <div class="ru-navbar ru-navbar-landing">
-        <div class="ru-nav-header"><a class="ru-brand" href=""> 
-            <div class="ru-brand-title">RU Hacks</div></a></div>
+        <div class="ru-nav-header">
+          <a class="ru-brand" href=""> 
+            <div class="ru-brand-title">RU Hacks</div>
+          </a>
+        </div>
         <div class="ru-nav-toggle" ng-click="home.toggleNav()"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
         </div>
         <div class="ru-nav ru-nav-responsive">    
@@ -54,7 +74,8 @@
               <div class="divider"></div>April 6-8, 2018<br>
             </div>
             <div id="splash-contact">Sign up here for 
-              <div class="divider"></div><br><br><a href="" title="LoginPortal">RU Hacks 2018   </a>
+              <div class="divider"></div><br><br>
+              <a href="" title="LoginPortal">RU Hacks 2018</a>
             </div>
             <div id="splash-call-to-action"></div>
           </div>
@@ -68,12 +89,11 @@
             <div class="ru-section-row ru-section-row-grid">
               <div class="ru-section-content-col-2">
                 <div class="ru-section-subheader">What is RUHacks?</div>
-                <div class="ru-section-content"></div>RU Hacks is a unique hackathon at Ryerson University, located at the heart of downtown Toronto. This year will
-                be our second RU Hacks and we hope you will be here to join us for 36 hours of creativity. Meet new people, learn new skills and showcase your talents. Remember since this is a MLH event, we must follow MLH's     <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" title="MLH Code of Conduct">Code of Conduct</a>
+                <div class="ru-section-content"></div>RU Hacks is a unique hackathon at Ryerson University, located at the heart of downtown Toronto. This year will be our second RU Hacks and we hope you will be here to join us for 36 hours of creativity. Meet new people, learn new skills and showcase your talents. Remember since this is a MLH event, we must follow MLH's <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" title="MLH Code of Conduct">Code of Conduct</a>
               </div>
               <div class="ru-section-content-col-2">
                 <div class="ru-section-subheader">Why Attend?</div>
-                <div class="ru-section-content"></div>Be a part of something special - meet other passionate students and let your creativity run wild. This event is the perfect opportunity to showcase your talents. This event is also an opportunity to learn new skills as mentors will be present, and there will be plenty of workshops to help you get your ideas off the ground.
+                <div class="ru-section-content">Be a part of something special - meet other passionate students and let your creativity run wild. This event is the perfect opportunity to showcase your talents. This event is also an opportunity to learn new skills as mentors will be present, and there will be plenty of workshops to help you get your ideas off the ground.</div>
               </div>
             </div>
           </div>
@@ -141,14 +161,32 @@
     <!-- ==================== Footer ==================== -->
     <div class="ru-content-blue" id="ru-footer">
       <div class="ru-row">
-        <div class="text-center"><a href="https://facebook.com/ryehacks" title="RU Hacks Facebook"><i class="fa fa-facebook-official ru-social-icon"></i></a><a href="https://twitter.com/ru_hacks" title="RU Hacks Twitter"><i class="fa fa-twitter ru-social-icon"></i></a><a href="https://www.snapchat.com/add/ruhacks" title="RU Hacks Snapchat"><i class="fa fa-snapchat ru-social-icon"></i></a><a href="mailto:helloworld@ruhacks.com" title="Email helloworld@ruhacks.com"><i class="fa fa-envelope ru-social-icon"></i></a></div>
-        <div class="text-center"><small class="ru-section-inverted">&copy; 2017-2018 RU Hacks. All Rights Reserved</small></div>
+        <div class="text-center">
+          <a href="https://facebook.com/ryehacks" title="RU Hacks Facebook">
+            <i class="fa fa-facebook-official ru-social-icon"></i>
+          </a>
+          <a href="https://twitter.com/ru_hacks" title="RU Hacks Twitter">
+            <i class="fa fa-twitter ru-social-icon"></i>
+          </a>
+          <a href="https://www.snapchat.com/add/ruhacks" title="RU Hacks Snapchat">
+            <i class="fa fa-snapchat ru-social-icon"></i>
+          </a>
+          <a href="mailto:helloworld@ruhacks.com" title="Email helloworld@ruhacks.com">
+            <i class="fa fa-envelope ru-social-icon"></i>
+          </a>
+        </div>
+        <div class="text-center">
+          <small class="ru-section-inverted">&copy; 2017-2018 RU Hacks. All Rights Reserved</small>
+        </div>
       </div>
     </div>
-    <!-- ==================== MLH Banner ==================== --><a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;left:20px;top:0;width:10%;z-index:100001;" href="https://mlh.io/seasons/na-2017/events?utm_source=na-2017&amp;utm_medium=TrustBadge&amp;utm_campaign=na-2017&amp;utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2018/white.svg" alt="Major League Hacking 2018 Hackathon Season" style="width:80%;"></a>
+    <!-- ==================== MLH Banner ==================== -->
+    <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;left:20px;top:0;width:10%;z-index:100001;" href="https://mlh.io/seasons/na-2017/events?utm_source=na-2017&amp;utm_medium=TrustBadge&amp;utm_campaign=na-2017&amp;utm_content=white" target="_blank">
+      <img src="https://s3.amazonaws.com/logged-assets/trust-badge/2018/white.svg" alt="Major League Hacking 2018 Hackathon Season" style="width:80%;">
+    </a>
     <!-- ==================== Includes ==================== -->
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu:400,700">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -157,8 +195,6 @@
       
       ga('create', 'UA-83248605-1', 'auto');
       ga('send', 'pageview');
-      
-      
     </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </body>
