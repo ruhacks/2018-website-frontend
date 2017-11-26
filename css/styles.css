@@ -258,6 +258,18 @@
   align-items: center;
 }
 
+@media screen and (max-width:1280px) {
+  .first-section {
+    background-image: url('../img/splash/slanted_1280x720.png');
+  }
+}
+
+@media screen and (max-width:800px) {
+  .first-section {
+    background-image: url('../img/splash/slanted_800x450.png');
+  }
+}
+
 .first-section .text-content {
   text-align: center;
   color: #ffdc00;
