@@ -79,6 +79,9 @@
 .hero.is-home {
   background-color: #002d72;
   color: #ffdc00;
+  position: fixed;
+  width: 100vw;
+  z-index: 500;
 }
 
 .hero.is-home a:not(.button):not(.dropdown-item):not(.tag),
@@ -246,7 +249,13 @@
   background-size: cover;
   width: 100%;
   background-repeat: no-repeat;
-  padding: 20px 0px 2px 0px;
+  background-position: bottom;
+  background-image: url('../img/splash/slanted_1920x1080.png');
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .first-section .text-content {
@@ -285,7 +294,7 @@
 =======================*/
 
 .second-section {
-  background-color: #ffffff
+  background-color: #ffffff;
   background-size: cover;
   width: 100%;
   background-repeat: no-repeat;
@@ -378,7 +387,7 @@
 
 
 .fourth-section {
-  background-color: #ffffff
+  background-color: #ffffff;
   background-size: cover;
   width: 100%;
   background-repeat: no-repeat;
