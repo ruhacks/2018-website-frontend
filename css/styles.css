@@ -245,17 +245,19 @@
 =======================*/
 
 .first-section {
+  align-items: center;
+  animation: daytime 20s linear infinite;
   background-color: #5bc2f4;
-  background-size: cover;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: bottom;
   background-image: url('../img/splash/slanted_1920x1080.png');
-  height: 100vh;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  height: 100vh;
+  transition: background .5s;
+  width: 100%;
 }
 
 @media screen and (max-height:640px) {
@@ -273,6 +275,30 @@
 @media screen and (max-width:800px) {
   .first-section {
     background-image: url('../img/splash/slanted_800x450.png');
+  }
+}
+
+@keyframes daytime {
+  0% {
+    background-color: #5bc2f4;
+  }
+  10% {
+    background-color: #00a9ef;
+  }
+  20% {
+    background-color: #004c9b;
+  }
+  30% {
+    background-color: #002d72;
+  }
+  80% {
+    background-color: #004c9b;
+  }
+  90% {
+    background-color: #00a9ef;
+  }
+  100% {
+    background-color: #5bc2f4;
   }
 }
 
