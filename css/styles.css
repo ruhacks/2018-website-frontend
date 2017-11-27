@@ -386,6 +386,12 @@
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+
+.third-section h4.white {
+  margin-top: 60px;
+  color: #fff;
+}
+
 .third-section h5 {
   font-size: 20px;
   color: #415b90;
