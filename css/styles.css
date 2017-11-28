@@ -77,8 +77,8 @@
 }
 
 .hero.is-home {
-  background-color: #002d72;
-  color: #ffdc00;
+  background-color: #fff;
+  color: #004c9b;
   position: fixed;
   width: 100vw;
   z-index: 500;
@@ -90,7 +90,7 @@
 }
 
 .hero.is-home .title {
-  color: #ffdc00;
+  color: #004c9b;
 
 }
 
@@ -117,8 +117,8 @@
 .hero.is-home a.navbar-item:hover, .hero.is-home a.navbar-item.is-active,
 .hero.is-home .navbar-link:hover,
 .hero.is-home .navbar-link.is-active {
-  background-color: #002d72;
-  color: #0a0a0a;
+  background-color: #fff;
+  color: #002d72;
   font-size: 40px;
 }
 
@@ -144,9 +144,9 @@
 }
 
 .hero.is-home .tabs.is-boxed li.is-active a, .hero.is-home .tabs.is-boxed li.is-active a:hover, .hero.is-home .tabs.is-toggle li.is-active a, .hero.is-home .tabs.is-toggle li.is-active a:hover {
-  background-color: #002d72;
+  background-color: #fff;
   border-color: #ffffff;
-  color: white;
+  color: #004c9b;
 }
 
 .hero.is-home.is-bold {
