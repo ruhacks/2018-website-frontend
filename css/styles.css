@@ -246,39 +246,83 @@
 
 .first-section {
   align-items: center;
+  animation: daytime 20s linear infinite;
   background-color: #5bc2f4;
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100vh;
+  position: relative;
   width: 100%;
 }
 
-#splash-background.first-section {
-  animation: daytime 20s linear infinite;
-  background-color: #5bc2f4;
+.first-section #splash-background {
+  background-color: transparent;
   background-image: url('../img/splash/slanted_1920x1080.png');
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
+  position: absolute;
   transition: background .5s;
+  width: 100%;
+  z-index:50;
+}
+
+.first-section .cloud {
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 15%;
+  position: absolute;
+  width: 15%;
+  z-index: 0;
+}
+
+.first-section #cloud1.cloud {
+  background-image: url('../img/splash/cloud1.png');
+  right: 10%;
+  top: 30%;
+}
+
+.first-section #cloud2.cloud {
+  background-image: url('../img/splash/cloud2.png');
+  right: 45%;
+  top: 10%;
+}
+
+.first-section #cloud3.cloud {
+  background-image: url('../img/splash/cloud3.png');
+  right: 80%;
+  top: 20%;
 }
 
 @media screen and (max-height:640px) {
   .first-section {
     height: auto;
   }
+  .first-section #splash-background {
+    height: 100%;
+  }
+  .first-section .cloud {
+    height: 30%;
+    width: 30%;
+  }
 }
 
 @media screen and (max-width:1280px) {
-  #splash-background.first-section {
+  .first-section #splash-background {
     background-image: url('../img/splash/slanted_1280x720.png');
   }
 }
 
 @media screen and (max-width:800px) {
-  #splash-background.first-section {
+  .first-section #splash-background {
     background-image: url('../img/splash/slanted_800x450.png');
+  }
+  .first-section .cloud {
+    height: 30%;
+    width: 30%;
   }
 }
 
@@ -313,9 +357,10 @@
 }
 
 .first-section .text-content {
+  color: #ffdc00;
   padding: 60px 0 60px 0;
   text-align: center;
-  color: #ffdc00;
+  z-index: 100;
 }
 
 .first-section .text-content h2 {
