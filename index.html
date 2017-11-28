@@ -40,36 +40,12 @@
   <!--[if lt IE 8]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
-
-  <section class="hero is-home" id="#home">
-    <div class="hero-head">
-      <nav class="navbar">
-        <div class="container">
-          <div class="navbar-brand">
-            <span class="navbar-burger burger" data-target="navbarMenu">
-              <span></span>
-              <span></span>
-              <span></span>
-            </span>
-          </div>
-          <div id="navbarMenu" class="navbar-menu">
-            <div class="navbar-end">
-              <a class="navbar-item" href="#about">
-                <b>ABOUT</b>
-              </a>
-              <a class="navbar-item" href="#FAQ">
-                <b>FAQ</b>
-              </a>
-              <a class="navbar-item" href="#location">
-                <b>LOCATION</b>
-              </a>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </div>
-  </section>
-
+<div class="topnav" id="myTopnav">
+  <a href="#about">ABOUT</a>
+  <a href="#FAQ">FAQ</a>
+  <a href="#location">LOCATION</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
   <section class="first-section">
     <div id="splash-text" class="has-text-centered text-content">
       <img src="img/logo/logo-splash.png" width="300" height="300">
@@ -215,8 +191,6 @@
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-        <script src="js/vendor/bootstrap.min.js"></script>
-        <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
 
