@@ -776,7 +776,7 @@ footer a:hover {
 }
 
 .topnav a {
-  float: right;
+  float: left;
   display: block;
   color: #fff;
   text-align: center;
@@ -810,6 +810,10 @@ footer a:hover {
   max-width: 1080px;
 }
 
+#topnav-nav .nav-container {
+  width: auto;
+}
+
 @media screen and (max-width: 600px) {
   .topnav a{display: none;}
   .topnav-btn {
@@ -823,5 +827,8 @@ footer a:hover {
   }
   #topnav-nav {
     max-width: 100%;
+  }
+  #topnav-nav .nav-container {
+    width: 100%;
   }
 }
