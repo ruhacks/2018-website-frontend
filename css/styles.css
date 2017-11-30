@@ -771,8 +771,11 @@ footer a:hover {
 }
 
 .topnav {
-  overflow: hidden;
   background-color: #002d72;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  z-index: 100001;
 }
 
 .topnav a {
@@ -819,7 +822,7 @@ footer a:hover {
   .topnav-btn {
     display: block;
   }
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {position: fixed;}
   .topnav.responsive a {
     float: none;
     display: block;
