@@ -273,27 +273,6 @@ body {
   z-index:50;
 }
 
-@media screen and (max-height:640px) {
-  .first-section {
-    height: auto;
-  }
-  .first-section #splash-background {
-    height: 100%;
-  }
-}
-
-@media screen and (max-width:1280px) {
-  .first-section #splash-background {
-    background-image: url('../img/splash/slanted_1280x720.png');
-  }
-}
-
-@media screen and (max-width:800px) {
-  .first-section #splash-background {
-    background-image: url('../img/splash/slanted_800x450.png');
-  }
-}
-
 .first-section .text-content {
   color: #ffdc00;
   padding: 60px 0 60px 0;
@@ -317,17 +296,52 @@ body {
   margin: 25px 0px 25px auto;
 }
 
-.first-section .text-content span {
+.first-section .text-content div {
   font-size: 18px;
   text-transform: uppercase;
   font-weight: 300;
   letter-spacing: 1px;
 }
-.first-section .text-content img {
-  max-width: 100%;
-  overflow: hidden;
+
+.first-section .text-content div br {
+  display: none;
 }
 
+.first-section .text-content div a.button.is-link {
+  margin: 5px 0 5px 0;
+}
+
+.first-section .text-content img {
+  height: 300px;
+  max-width: 100%;
+  overflow: hidden;
+  width: 300px;
+}
+
+@media screen and (max-height:640px) {
+  .first-section {
+    height: auto;
+  }
+  .first-section #splash-background {
+    height: 100%;
+  }
+}
+
+@media screen and (max-width:1280px) {
+  .first-section #splash-background {
+    background-image: url('../img/splash/slanted_1280x720.png');
+  }
+}
+
+@media screen and (max-width:800px) {
+  .first-section #splash-background {
+    background-image: url('../img/splash/slanted_800x450.png');
+  }
+
+  .first-section .text-content div br {
+    display: block;
+  }
+}
 
 /* ======================
 ---- SECOND SECTION------
