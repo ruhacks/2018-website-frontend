@@ -249,25 +249,25 @@ body {
 =======================*/
 
 .first-section {
-  align-items: center;
   background-color: #5bc2f4;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   height: 100vh;
   position: initial;
   width: 100%;
 }
 
 .first-section #splash-background {
+  align-items: center;
   background-color: transparent;
   background-image: url('../img/splash/slanted_1920x1080.png');
   background-image: url('../img/splash/layout_animated_anigen.svg');
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
   height: 100vh;
-  position: absolute;
+  justify-content: center;
+  position: relative;
   transition: background .5s;
   width: 100%;
   z-index:50;
