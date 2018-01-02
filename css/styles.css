@@ -352,7 +352,7 @@ body {
   background-size: cover;
   width: 100%;
   background-repeat: no-repeat;
-  padding: 10px 20px;
+  padding: 30px 20px;
 }
 
 .second-section .service-item {
@@ -394,7 +394,7 @@ body {
   background-size: cover;
   width: 100%;
   background-repeat: no-repeat;
-  padding: 10px 20px;
+  padding: 30px 20px;
 }
 
 .third-section .left-image img {
@@ -423,7 +423,8 @@ body {
 }
 
 .third-section h4.white {
-  margin-top: 60px;
+  margin-top: 5px;
+  margin-bottom: 15px;
   color: #fff;
 }
 
@@ -451,7 +452,7 @@ body {
   background-size: cover;
   width: 100%;
   background-repeat: no-repeat;
-  padding: 10px 20px;
+  padding: 30px 20px;
 }
 
 .fourth-section .right-image {
@@ -464,7 +465,7 @@ body {
   text-align: center;
 }
 
-.ffourth-section .left-text {
+.fourth-section .left-text {
   display: inline;
   text-align: right;
 }
@@ -479,7 +480,7 @@ body {
   color: #415b90;
   font-size: 40px;
   font-weight: 900;
-  margin-top: 25px;
+  margin-top: 5px;
   margin-bottom: 15px;
 }
 .fourth-section h5 {
@@ -495,13 +496,54 @@ body {
   margin-top: 15px;
 }
 
+/* ======================
+----- THIRD SECTION------
+=======================*/
+
+.fifth-section {
+  background-color: #004c9b;
+  background-size: cover;
+  width: 100%;
+  background-repeat: no-repeat;
+  padding: 30px 20px;
+}
+
+.fifth-section .left-image img {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.fifth-section .right-text {
+  display: inline;
+}
+
+.fifth-section em {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.fifth-section h4 {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.fifth-section p {
+  color: #fff;
+  margin-top: 15px;
+}
 
 /* ======================
 ----- FOOTER SECTION ----
 =======================*/
 
 footer {
-  background-color: #004c9b;
+  background-color: #002d72;
   text-align: center;
   padding: 20px 0px 20px 0px;
 }

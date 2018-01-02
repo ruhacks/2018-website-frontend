@@ -6,3 +6,7 @@ function myFunction() {
         x.className = "topnav";
     }
 }
+
+function myOnClickFunction() {
+    alert("Applications have not been open yet");
+}
