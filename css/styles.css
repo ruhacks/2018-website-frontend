@@ -344,10 +344,10 @@ body {
 }
 
 /* ======================
----- SECOND SECTION------
+---- ABOUT SECTION------
 =======================*/
 
-.second-section {
+.about-section {
   background-color: #002d72;
   background-size: cover;
   width: 100%;
@@ -355,30 +355,30 @@ body {
   padding: 30px 20px;
 }
 
-.second-section .service-item {
+.about-section .service-item {
   text-align: center;
 }
 
-.second-section .service-item .icon img {
+.about-section .service-item .icon img {
   max-width: 100%;
   overflow: hidden;
 }
 
-.second-section h4 {
+.about-section h4 {
   color: #fff;
   font-size: 40px;
   font-weight: 900;
   margin-top: 25px;
   margin-bottom: 15px;
 }
-.second-section h5 {
+.about-section h5 {
   font-size: 20px;
   color: #415b90;
   font-weight: 700;
   margin-top: 25px;
   margin-bottom: 15px;
 }
-.second-section p {
+.about-section p {
   color: #fff;
   margin-top: 15px;
   color: #415b90;
@@ -386,10 +386,10 @@ body {
 
 
 /* ======================
------ THIRD SECTION------
+----- FAQ SECTION------
 =======================*/
 
-.third-section {
+.FAQ-section {
   background-color: #004c9b;
   background-size: cover;
   width: 100%;
@@ -397,23 +397,23 @@ body {
   padding: 30px 20px;
 }
 
-.third-section .left-image img {
+.FAQ-section .left-image img {
   width: 100%;
   overflow: hidden;
   text-align: center;
 }
 
-.third-section .right-text {
+.FAQ-section .right-text {
   display: inline;
 }
 
-.third-section em {
+.FAQ-section em {
   font-size: 18px;
   font-style: normal;
   font-weight: 300;
 }
 
-.third-section h4 {
+.FAQ-section h4 {
   margin-top: 60px;
   color: #415b90;
   font-size: 40px;
@@ -422,13 +422,13 @@ body {
   letter-spacing: 1px;
 }
 
-.third-section h4.white {
+.FAQ-section h4.white {
   margin-top: 5px;
   margin-bottom: 15px;
   color: #fff;
 }
 
-.third-section h5 {
+.FAQ-section h5 {
   font-size: 20px;
   color: #415b90;
   font-weight: 700;
@@ -436,18 +436,18 @@ body {
   margin-bottom: 15px;
 }
 
-.third-section p {
+.FAQ-section p {
   color: #415b90;
   margin-top: 15px;
 }
 
 
 /* ======================
----- FOURTH SECTION -----
+---- LOCATION SECTION -----
 =======================*/
 
 
-.fourth-section {
+.Location-section {
   background-color: #ffffff;
   background-size: cover;
   width: 100%;
@@ -455,35 +455,35 @@ body {
   padding: 30px 20px;
 }
 
-.fourth-section .right-image {
+.Location-section .right-image {
   display: inline;
 }
 
-.fourth-section .right-image img {
+.Location-section .right-image img {
   max-width: 100%;
   overflow: hidden;
   text-align: center;
 }
 
-.fourth-section .left-text {
+.Location-section .left-text {
   display: inline;
   text-align: right;
 }
 
-.fourth-section em {
+.Location-section em {
   font-size: 18px;
   font-style: normal;
   font-weight: 300;
 }
 
-.fourth-section h4 {
+.Location-section h4 {
   color: #415b90;
   font-size: 40px;
   font-weight: 900;
   margin-top: 5px;
   margin-bottom: 15px;
 }
-.fourth-section h5 {
+.Location-section h5 {
   font-size: 20px;
   color: #415b90;
   font-weight: 700;
@@ -491,50 +491,61 @@ body {
   margin-bottom: 15px;
 }
 
-.fourth-section p {
+.Location-section p {
   color: #415b90;
   margin-top: 15px;
 }
 
 /* ======================
------ THIRD SECTION------
+----- PRIZES SECTION------
 =======================*/
 
-.fifth-section {
-  background-color: #004c9b;
+.prizes-section {
+  background-color: #ffffff;
   background-size: cover;
   width: 100%;
   background-repeat: no-repeat;
   padding: 30px 20px;
 }
 
-.fifth-section .left-image img {
-  width: 100%;
+.prizes-section .right-image {
+  display: inline;
+}
+
+.prizes-section .right-image img {
+  max-width: 100%;
   overflow: hidden;
   text-align: center;
 }
 
-.fifth-section .right-text {
+.prizes-section .left-text {
   display: inline;
+  text-align: right;
 }
 
-.fifth-section em {
+.prizes-section em {
   font-size: 18px;
   font-style: normal;
   font-weight: 300;
 }
 
-.fifth-section h4 {
-  margin-top: 5px;
-  margin-bottom: 15px;
-  color: #fff;
+.prizes-section h4 {
+  color: #415b90;
   font-size: 40px;
   font-weight: 900;
-  letter-spacing: 1px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+.prizes-section h5 {
+  font-size: 20px;
+  color: #415b90;
+  font-weight: 700;
+  margin-top: 25px;
+  margin-bottom: 15px;
 }
 
-.fifth-section p {
-  color: #fff;
+.prizes-section p {
+  color: #415b90;
   margin-top: 15px;
 }
 
