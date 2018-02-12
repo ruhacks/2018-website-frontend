@@ -550,6 +550,62 @@ body {
 }
 
 /* ======================
+--- Sponsors SECTION---
+=======================*/
+
+.sponsors-section {
+  background-color: #004c9b;
+  background-size: cover;
+  width: 100%;
+  background-repeat: no-repeat;
+  padding: 30px 20px;
+}
+
+.sponsors-section .left-image img {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.sponsors-section .right-text {
+  display: inline;
+}
+
+.sponsors-section em {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.sponsors-section h4 {
+  margin-top: 60px;
+  color: #415b90;
+  font-size: 40px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.sponsors-section h4.white {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.sponsors-section h5 {
+  font-size: 20px;
+  color: #415b90;
+  font-weight: 700;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.sponsors-section p {
+  color: #415b90;
+  margin-top: 15px;
+}
+
+/* ======================
 ----- FOOTER SECTION ----
 =======================*/
 
