@@ -578,17 +578,12 @@ body {
 }
 
 .prizes-section h4 {
-  margin-top: 60px;
-  color: #415b90;
-  font-size: 40px;
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-.prizes-section h4.white {
   margin-top: 5px;
   margin-bottom: 15px;
   color: #fff;
+  font-size: 40px;
+  font-weight: 900;
+  letter-spacing: 1px;
 }
 
 .prizes-section h5 {
