@@ -497,10 +497,10 @@ body {
 }
 
 /* ======================
------ PRIZES SECTION------
+----- Sponsors SECTION------
 =======================*/
 
-.prizes-section {
+.sponsors-section {
   background-color: #ffffff;
   background-size: cover;
   width: 100%;
@@ -508,19 +508,67 @@ body {
   padding: 30px 20px;
 }
 
-.prizes-section .right-image {
+.sponsors-section .right-image {
   display: inline;
 }
 
-.prizes-section .right-image img {
+.sponsors-section .right-image img {
   max-width: 100%;
   overflow: hidden;
   text-align: center;
 }
 
-.prizes-section .left-text {
+.sponsors-section .left-text {
   display: inline;
   text-align: right;
+}
+
+.sponsors-section em {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.sponsors-section h4 {
+  color: #415b90;
+  font-size: 40px;
+  font-weight: 900;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+.sponsors-section h5 {
+  font-size: 20px;
+  color: #415b90;
+  font-weight: 700;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.sponsors-section p {
+  color: #415b90;
+  margin-top: 15px;
+}
+
+/* ======================
+--- PRIZES SECTION---
+=======================*/
+
+.prizes-section {
+  background-color: #004c9b;
+  background-size: cover;
+  width: 100%;
+  background-repeat: no-repeat;
+  padding: 30px 20px;
+}
+
+.prizes-section .left-image img {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.prizes-section .right-text {
+  display: inline;
 }
 
 .prizes-section em {
@@ -530,12 +578,14 @@ body {
 }
 
 .prizes-section h4 {
-  color: #415b90;
-  font-size: 40px;
-  font-weight: 900;
   margin-top: 5px;
   margin-bottom: 15px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 900;
+  letter-spacing: 1px;
 }
+
 .prizes-section h5 {
   font-size: 20px;
   color: #415b90;
