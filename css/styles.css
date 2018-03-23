@@ -384,6 +384,59 @@ body {
   color: #415b90;
 }
 
+/* ======================
+----- SCHEDULE SECTION------
+=======================*/
+
+.schedule-section {
+  background-color: #ffffff;
+  background-size: cover;
+  width: 100%;
+  background-repeat: no-repeat;
+  padding: 30px 20px;
+}
+
+.schedule-section .right-image {
+  display: inline;
+}
+
+.schedule-section .right-image img {
+  max-width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.schedule-section .left-text {
+  display: inline;
+  text-align: right;
+}
+
+.schedule-section em {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.schedule-section h4 {
+  color: #415b90;
+  font-size: 40px;
+  font-weight: 900;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+.schedule-section h5 {
+  font-size: 20px;
+  color: #415b90;
+  font-weight: 700;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.schedule-section p {
+  color: #415b90;
+  margin-top: 15px;
+}
+
 
 /* ======================
 ----- FAQ SECTION------
