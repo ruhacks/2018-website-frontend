@@ -13,6 +13,7 @@ google.charts.load("current", {packages:["timeline"]});
     dataTable.addRows([
       [ 'Main Events',  'Early Registration',    new Date(2018,5,25,17,00), new Date(2018,5,25,18,00) ],
       [ 'Main Events',  'Registration',    new Date(2018,5,25,18,00), new Date(2018,5,25,23,00) ],
+      [ 'Events',  'Hacking Begins',    new Date(2018,5,25,22,00), new Date(2018,5,26,00,00) ],
       [ 'Events',  'Opening Ceremony',    new Date(2018,5,25,19,00), new Date(2018,5,25,20,30) ],
       [ 'Events',  'Team Formation',    new Date(2018,5,25,21,00), new Date(2018,5,25,22,00) ],
       [ 'Food',  'Dinner',    new Date(2018,5,25,20,30), new Date(2018,5,25,23,30) ],
@@ -31,9 +32,10 @@ google.charts.load("current", {packages:["timeline"]});
       [ 'Main Events',  'Project Demos to Judges',    new Date(2018,5,27,10,00), new Date(2018,5,27,12,00) ],      
       [ 'Main Events',   'CLosing Ceromony',           new Date(2018,5,27,13,00), new Date(2018,5,27,16,00) ]]);
 
-    var options = {
-      timeline: { colorByRowLabel: true }
+    var options = { timeline: { colorByRowLabel: true }, width: 6000, height: 300,
     };
 
-    chart.draw(dataTable, {width: 5950, height: 250}, options);
+    chart.draw(dataTable, options);
   }
+
+  // colorByRowLabel: true
