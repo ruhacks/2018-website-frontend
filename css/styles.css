@@ -925,6 +925,12 @@ footer a:hover {
   width: auto;
 }
 
+#chart_wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 100%;
+    }
+
 @media screen and (max-width: 600px) {
   .topnav a{display: none;}
   .topnav-btn {

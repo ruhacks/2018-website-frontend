@@ -1,29 +1,39 @@
-var timetable = new Timetable();
+google.charts.load("current", {packages:["timeline"]});
+  google.charts.setOnLoadCallback(drawChart);
+  function drawChart() {
 
-      timetable.setScope(0,23)
+    var container = document.getElementById('example5.2');
+    var chart = new google.visualization.Timeline(container);
+    var dataTable = new google.visualization.DataTable();
 
-      timetable.addLocations(['Friday', '', '  ', 'Saturday', 'Sunday', '   ']);
+    dataTable.addColumn({ type: 'string', id: 'Room' });
+    dataTable.addColumn({ type: 'string', id: 'Name' });
+    dataTable.addColumn({ type: 'date', id: 'Start' });
+    dataTable.addColumn({ type: 'date', id: 'End' });
+    dataTable.addRows([
+      [ 'Main Events',  'Early Registration',    new Date(2018,5,25,17,00), new Date(2018,5,25,18,00) ],
+      [ 'Main Events',  'Registration',    new Date(2018,5,25,18,00), new Date(2018,5,25,23,00) ],
+      [ 'Events',  'Opening Ceremony',    new Date(2018,5,25,19,00), new Date(2018,5,25,20,30) ],
+      [ 'Events',  'Team Formation',    new Date(2018,5,25,21,00), new Date(2018,5,25,22,00) ],
+      [ 'Food',  'Dinner',    new Date(2018,5,25,20,30), new Date(2018,5,25,23,30) ],
+      [ 'Activities',  'Hacker-Sponsor Mingle', new Date(2018,5,25,17,00), new Date(2018,5,25,19,00) ],
+      [ 'Workshops', 'Workshop #1',   new Date(2018,5,25,23,00), new Date(2018,5,26,0,00) ],
 
-      timetable.addEvent('Early Registration', 'Friday', new Date(2015,7,17,17,00), new Date(2015,7,17,18,00), { url: '#' });
-      timetable.addEvent('Registration', 'Friday', new Date(2015,7,17,18,00), new Date(2015,7,17,23,00), { url: '#' });
-      timetable.addEvent('Hacker-Sponsor Mingle', '', new Date(2015,7,17,17,00), new Date(2015,7,17,19,00), { url: '#' });
-      timetable.addEvent('Dinner', '  ', new Date(2015,7,17,20,30), new Date(2015,7,17,23,30), { url: '#' });
-      timetable.addEvent('Opening Ceremony', '  ', new Date(2015,7,17,19,00), new Date(2015,7,17,20,30), { url: '#' });
-      timetable.addEvent('Mentor Meeting', '', new Date(2015,7,17,20,00), new Date(2015,7,17,21,00)); 
-      timetable.addEvent('Team Formation', '', new Date(2015,7,17,21,00), new Date(2015,7,17,22,00)); 
-      timetable.addEvent('Workshop #1', '', new Date(2015,7,17,23,00), new Date(2015,7,18,0,00), { url: '#' });
-      
-      timetable.addEvent('Midnight Snack', 'Saturday', new Date(2015,7,17,00,00), new Date(2015,7,17,2,00), { url: '#' });
-      timetable.addEvent('Breakfast', 'Saturday', new Date(2015,7,17,7,00), new Date(2015,7,17,9,00), { url: '#' });
-      timetable.addEvent('Lunch', 'Saturday', new Date(2015,7,17,13,00), new Date(2015,7,17,15,00), { url: '#' });
-      timetable.addEvent('Dinner', 'Saturday', new Date(2015,7,17,19,00), new Date(2015,7,17,21,30), { url: '#'});
+      [ 'Food',  'Midnight Snack',    new Date(2018,5,26,00,00), new Date(2018,5,26,2,00) ],
+      [ 'Food',  'Breakfast',    new Date(2018,5,26,7,00), new Date(2018,5,26,9,00) ], 
+      [ 'Food',  'Lunch',    new Date(2018,5,26,13,00), new Date(2018,5,26,15,00) ], 
+      [ 'Food',  'Dinner',    new Date(2018,5,26,19,00), new Date(2018,5,26,21,30) ], 
 
-      timetable.addEvent('Midnight Snack', 'Sunday', new Date(2015,7,17,00,00), new Date(2015,7,17,2,00), { url: '#' });
-      timetable.addEvent('Project Submission', 'Sunday', new Date(2015,7,17,8,00), new Date(2015,7,17,9,00), { url: '#' });
-      timetable.addEvent('Brunch', 'Sunday', new Date(2015,7,17,9,00), new Date(2015,7,17,12,00), { url: '#' });
-      timetable.addEvent('Room Allocation for Demos', '   ', new Date(2015,7,17,8,00), new Date(2015,7,17,10,00), { url: '#' });
-      timetable.addEvent('Project Demos to Judges', '   ', new Date(2015,7,17,10,00), new Date(2015,7,17,12,00), { url: '#' });
-      timetable.addEvent('CLosing Ceromony', 'Sunday', new Date(2015,7,17,13,00), new Date(2015,7,17,16,00), { url: '#' });
+      [ 'Food',  'Midnight Snack',    new Date(2018,5,27,00,00), new Date(2018,5,27,2,00) ],
+      [ 'Events',  'Project Submission',    new Date(2018,5,27,8,00), new Date(2018,5,27,9,00) ],
+      [ 'Food',  'Brunch',    new Date(2018,5,27,9,00), new Date(2018,5,27,12,00) ],
+      [ 'Main Events',  'Room Allocation for Demos',    new Date(2018,5,27,8,00), new Date(2018,5,27,10,00) ],
+      [ 'Main Events',  'Project Demos to Judges',    new Date(2018,5,27,10,00), new Date(2018,5,27,12,00) ],      
+      [ 'Main Events',   'CLosing Ceromony',           new Date(2018,5,27,13,00), new Date(2018,5,27,16,00) ]]);
 
-      var renderer = new Timetable.Renderer(timetable);
-      renderer.draw('.timetable');
+    var options = {
+      timeline: { colorByRowLabel: true }
+    };
+
+    chart.draw(dataTable, {width: 5950, height: 250}, options);
+  }
