@@ -26,7 +26,7 @@ google.charts.load("current", {packages:["timeline"]});
       [ 'Food',  'Brunch',  null,  new Date(2018,5,27,9,00), new Date(2018,5,27,12,00) ],
       [ 'Main Events',  'Room Allocation for Demos',  null,  new Date(2018,5,27,8,00), new Date(2018,5,27,10,00) ],
       [ 'Main Events',  'Project Demos to Judges',  null,  new Date(2018,5,27,10,00), new Date(2018,5,27,12,00) ],      
-      [ 'Main Events',   'CLosing Ceromony','Ryerson Theatre',    new Date(2018,5,27,13,00), new Date(2018,5,27,16,00) ]]);
+      [ 'Main Events',   'Closing Ceromony','Ryerson Theatre',    new Date(2018,5,27,13,00), new Date(2018,5,27,16,00) ]]);
     dataTable.addRows([
       [ 'Main Events',  'Hacking Begins',  null,  new Date(2018,5,25,22,00), new Date(2018,5,26,00,00) ],
       [ 'Main Events',  'Opening Ceremony', 'Ryerson Theatre',   new Date(2018,5,25,19,00), new Date(2018,5,25,20,30) ],
@@ -34,7 +34,7 @@ google.charts.load("current", {packages:["timeline"]});
       [ 'Main Events',  'Project Submission', null,   new Date(2018,5,27,8,00), new Date(2018,5,27,10,00) ]]);
 
     var options = { timeline: { colorByRowLabel: true}, width: 5000, height: 300, barLabelStyle: {
-        fontSize: 40}
+        fontSize: 80}
     };
 
     chart.draw(dataTable, options);
