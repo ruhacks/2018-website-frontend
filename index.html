@@ -14,10 +14,13 @@
   <meta property="og:url" content="https://www.ruhacks.com/">
   <meta property="og:title" content="RU Hacks 2018 | Ryerson University">
   <meta property="og:description" content="RU Hacks 2018, Ryerson University's hackathon.">
-  <meta property="og:image" content="https://2018.ruhacks.com/img/og_twitter/splash_960x540.png?20181201">
+  <meta property="og:image" content="https://2018.ruhacks.com/img/og_twitter/splash_960x540.png?20180330">
   <meta property="og:image:type" content="png">
   <meta property="og:image:width" content="960">
   <meta property="og:image:height" content="540">
+  <!-- ==================== Time Table ==================== -->
+  <meta name="description" content="Vanilla javascript plugin for building nice responsive timetables">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- ==================== Twitter Handle ==================== -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@ruhacks">
@@ -25,7 +28,7 @@
   <meta name="twitter:domain" content="https://www.ruhacks.com/">
   <meta name="twitter:title" content="RU Hacks 2018 | Ryerson University">
   <meta name="twitter:description" content="RU Hacks 2018, Ryerson University's hackathon.">
-  <meta name="twitter:image" content="https://2018.ruhacks.com/img/og_twitter/splash_960x540.png?20181201">
+  <meta name="twitter:image" content="https://2018.ruhacks.com/img/og_twitter/splash_960x540.png?20180330">
   <meta name="twitter:image:alt" content="RU Hacks happening in Spring 2018">
   <!-- ==================== Site ==================== -->
   <link rel="icon" type="image/png" href="img/logo/logo_50x50.png?20181127">
@@ -35,6 +38,9 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono">
   <link rel="stylesheet" href="css/bulma.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="styles/timetablejs.css">
+  <link rel="stylesheet" href="styles/timetablestyle.css">
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
 <body>
   <!--[if lt IE 8]>
@@ -109,6 +115,17 @@
           </article>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- SCHEDULE SECTION -->
+  <section class="schedule-section" id="sponsors">
+    <div class="container">
+      <div class="row">
+        <h4>Schedule</h4>
+      </div>
+      <div id="chart_wrapper">
+  <div id="example5.2" style="height: 100%; width: 100%;"></div></div>
     </div>
   </section>
 
@@ -383,5 +400,7 @@
       })
     });
   </script>
+  <script src="scripts/timetable.js"></script>
+  <script src="scripts/script.js"></script>
 </body>
 </html>

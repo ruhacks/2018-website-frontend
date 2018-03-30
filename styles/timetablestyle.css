@@ -1,0 +1,32 @@
+/*body{
+	background:#fcfcfc;
+	font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;color:#333;
+	font-size:15px}
+a{
+	text-decoration:none}
+.row-heading{
+	font-weight:500;
+	font-size:.7em;
+	text-transform:uppercase}
+.timetable .time-label{
+	font-size:.8em;
+	font-weight:500}
+.timetable .time-entry.vip-only:hover{
+	background-color:#AE67F0}
+
+.timetable .time-entry.Main-Events{
+	background-color:#337AFF;
+	border:1px solid #FFFFFF}
+
+.timetable .time-entry.Food{
+background-color:#EC626F;
+border:1px solid #FFFFFF}
+
+.timetable .time-entry.Workshops{
+background-color:#097E7A;
+border:1px solid #FFFFFF}
+
+.timetable .time-entry.Activities{
+background-color:#29B110;
+border:1px solid #FFFFFF}*/
+
