@@ -17,7 +17,7 @@ google.charts.load("current", {packages:["timeline"]});
       [ 'Food', 'Dinner', 'TDB', new Date(2018,5,25,20,30), new Date(2018,5,25,23,30) ],
       [ 'Activities', 'Hacker-Sponsor Mingle', 'TDB', new Date(2018,5,25,17,00), new Date(2018,5,25,19,00) ],
       [ 'Workshops', 'Workshop #1', 'TDB', new Date(2018,5,25,23,00), new Date(2018,5,26,0,00) ],
-      [ 'Workshops', 'AI + Android Workshop', 'TDB', new Date(2018,5,26,18,30), new Date(2018,5,26,19,30) ],
+      [ 'Workshops', 'AI + Android', 'TDB', new Date(2018,5,26,18,30), new Date(2018,5,26,19,30) ],
       [ 'Food', 'Midnight Snack', 'TDB', new Date(2018,5,26,00,00), new Date(2018,5,26,2,00) ],
       [ 'Food', 'Breakfast', 'TDB', new Date(2018,5,26,7,00), new Date(2018,5,26,9,00) ], 
       [ 'Food','Lunch', 'TDB', new Date(2018,5,26,13,00), new Date(2018,5,26,15,00) ], 
