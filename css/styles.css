@@ -602,6 +602,13 @@ body {
   margin-top: 15px;
 }
 
+.sponsors-section .content.sponsor-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
 /* ======================
 --- PRIZES SECTION---
 =======================*/
