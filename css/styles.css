@@ -602,11 +602,113 @@ body {
   margin-top: 15px;
 }
 
-.sponsors-section .content.sponsor-logo {
+.sponsors-section p.content.sponsor-logo img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sponsors-section img#sponsor-child-play {
+  height: 12em;
+}
+
+.sponsors-section .sponsor-flex {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  flex-wrap: wrap;
+  margin: 1.5em 0;
+}
+
+.sponsors-section .sponsor-flex-container img {
+  margin: 1.5em;
+}
+
+.sponsors-section .sponsor-flex-container img#sponsor-td {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 16em;
+}
+
+.sponsors-section .sponsor-flex-container img#sponsor-cibc,
+.sponsors-section .sponsor-flex-container img#sponsor-fdm {
+  height: 8em;
+}
+
+.sponsors-section .sponsor-flex-container img#sponsor-rogers {
+  height: 4em;
+}
+
+.sponsors-section .sponsor-flex-container img#sponsor-consensys {
+  height: 8em;
+}
+
+.sponsors-section .sponsor-flex-container img#sponsor-dot-tech,
+.sponsors-section .sponsor-flex-container img#sponsor-hackerearth,
+.sponsors-section .sponsor-flex-container img#sponsor-github,
+.sponsors-section .sponsor-flex-container img#sponsor-mlh
+{
+  
+  height: 4em;
+}
+
+.sponsors-section .sponsor-flex-container img#sponsor-ree {
+  height: 6em;
+}
+
+.sponsors-section .sponsor-flex-container img#sponsor-rss,
+.sponsors-section .sponsor-flex-container img#sponsor-ress
+{
+  height: 12em;
+}
+
+@media (max-width:768px) {
+  .sponsors-section img#sponsor-child-play {
+    height: auto;
+  }
+
+  .sponsors-section .sponsor-flex-container img {
+    height: auto !important;
+  }
+
+  .sponsors-section .sponsor-flex-container img#sponsor-td {
+    width: auto;
+  }
+  
+  .sponsors-section .sponsor-flex-container img#sponsor-cibc {
+    width: 22em;
+  }
+
+  .sponsors-section .sponsor-flex-container img#sponsor-fdm {
+    width: 14em;
+  }
+  
+  .sponsors-section .sponsor-flex-container img#sponsor-rogers,
+  .sponsors-section .sponsor-flex-container img#sponsor-consensys
+  {
+    width: 18em;
+  }
+  
+  .sponsors-section .sponsor-flex-container img#sponsor-dot-tech,
+  .sponsors-section .sponsor-flex-container img#sponsor-hackerearth,
+  .sponsors-section .sponsor-flex-container img#sponsor-github,
+  .sponsors-section .sponsor-flex-container img#sponsor-mlh
+  {
+    
+    width: 12em;
+  }
+  
+  .sponsors-section .sponsor-flex-container img#sponsor-ree {
+    width: auto;
+  }
+  
+  .sponsors-section .sponsor-flex-container img#sponsor-rss,
+  .sponsors-section .sponsor-flex-container img#sponsor-ress
+  {
+    width: 10em;
+  }
 }
 
 /* ======================
