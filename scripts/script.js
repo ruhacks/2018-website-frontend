@@ -8,30 +8,33 @@ google.charts.load("current", {packages:["timeline"]});
 
     dataTable.addColumn({ type: 'string', id: 'Category' });
     dataTable.addColumn({ type: 'string', id: 'Name' });
-    dataTable.addColumn({ type: 'string', role: 'des'});
+    dataTable.addColumn({ type: 'string', role: 'longName' });
+    dataTable.addColumn({ type: 'string', role: 'location'});
     dataTable.addColumn({ type: 'date', id: 'Start' });
     dataTable.addColumn({ type: 'date', id: 'End' });
+    dataTable.addColumn({ type: 'string', role: 'description'});
     dataTable.addRows([
-      [ 'Main Events', 'Early Registration', 'TDB', new Date(2018,5,25,17,00), new Date(2018,5,25,18,00) ],
-      [ 'Main Events', 'Registration', 'TDB', new Date(2018,5,25,18,00), new Date(2018,5,25,23,00) ],
-      [ 'Food', 'Dinner', 'TDB', new Date(2018,5,25,20,30), new Date(2018,5,25,23,30) ],
-      [ 'Activities', 'Hacker-Sponsor Mingle', 'TDB', new Date(2018,5,25,17,00), new Date(2018,5,25,19,00) ],
-      [ 'Workshops', 'Workshop #1', 'TDB', new Date(2018,5,25,23,00), new Date(2018,5,26,0,00) ],
-      [ 'Workshops', 'AI + Android', 'TDB', new Date(2018,5,26,18,30), new Date(2018,5,26,19,30) ],
-      [ 'Food', 'Midnight Snack', 'TDB', new Date(2018,5,26,00,00), new Date(2018,5,26,2,00) ],
-      [ 'Food', 'Breakfast', 'TDB', new Date(2018,5,26,7,00), new Date(2018,5,26,9,00) ], 
-      [ 'Food','Lunch', 'TDB', new Date(2018,5,26,13,00), new Date(2018,5,26,15,00) ], 
-      [ 'Food', 'Dinner',  'TDB', new Date(2018,5,26,19,00), new Date(2018,5,26,21,30) ], 
-      [ 'Food', 'Midnight Snack', 'TDB', new Date(2018,5,27,00,00), new Date(2018,5,27,2,00) ],
-      [ 'Food', 'Brunch', 'TDB', new Date(2018,5,27,9,00), new Date(2018,5,27,12,00) ],
-      [ 'Main Events', 'Room Allocation for Demos', 'TDB', new Date(2018,5,27,8,00), new Date(2018,5,27,10,00) ],
-      [ 'Main Events', 'Project Demos to Judges', 'TDB', new Date(2018,5,27,10,00), new Date(2018,5,27,12,00) ],      
-      [ 'Main Events', 'Closing Ceromony','Ryerson Theatre', new Date(2018,5,27,13,00), new Date(2018,5,27,16,00) ]]);
-    dataTable.addRows([
-      [ 'Main Events', 'Hacking Begins', 'TDB', new Date(2018,5,25,22,00), new Date(2018,5,26,00,00) ],
-      [ 'Main Events', 'Opening Ceremony', 'Ryerson Theatre', new Date(2018,5,25,19,00), new Date(2018,5,25,20,30) ],
-      [ 'Main Events', 'Team Formation', 'TDB', new Date(2018,5,25,21,00), new Date(2018,5,25,22,00) ],
-      [ 'Main Events', 'Project Submission', 'TDB', new Date(2018,5,27,8,00), new Date(2018,5,27,10,00) ]]);
+      [ 'Main Events', 'Early Registration', '', 'TDB', new Date(2018,5,25,17,00), new Date(2018,5,25,18,00), '' ],
+      [ 'Main Events', 'Registration', '', 'TDB', new Date(2018,5,25,18,00), new Date(2018,5,25,23,00), '' ],
+      [ 'Main Events', 'Opening Ceremony', '', 'Ryerson Theatre', new Date(2018,5,25,19,00), new Date(2018,5,25,20,30), '' ],
+      [ 'Main Events', 'Team Formation', '', 'TDB', new Date(2018,5,25,21,00), new Date(2018,5,25,22,00), '' ],
+      [ 'Main Events', 'Hacking Begins', '', 'TDB', new Date(2018,5,25,22,00), new Date(2018,5,26,00,00), '' ],
+      [ 'Main Events', 'Project Submission', '', 'TDB', new Date(2018,5,27,8,00), new Date(2018,5,27,10,00), '' ],
+      [ 'Main Events', 'Room Allocation for Demos', '', 'TDB', new Date(2018,5,27,8,00), new Date(2018,5,27,10,00), '' ],
+      [ 'Main Events', 'Project Demos to Judges', '', 'TDB', new Date(2018,5,27,10,00), new Date(2018,5,27,12,00), '' ],      
+      [ 'Main Events', 'Closing Ceromony', '', 'Ryerson Theatre', new Date(2018,5,27,13,00), new Date(2018,5,27,16,00), '' ],
+      [ 'Food', 'Dinner', '', 'TDB', new Date(2018,5,25,20,30), new Date(2018,5,25,23,30), '' ],
+      [ 'Food', 'Midnight Snack', '', 'TDB', new Date(2018,5,26,00,00), new Date(2018,5,26,2,00), '' ],
+      [ 'Food', 'Breakfast', '', 'TDB', new Date(2018,5,26,7,00), new Date(2018,5,26,9,00), '' ], 
+      [ 'Food', 'Lunch', '', 'TDB', new Date(2018,5,26,13,00), new Date(2018,5,26,15,00), '' ], 
+      [ 'Food', 'Dinner',  '', 'TDB', new Date(2018,5,26,19,00), new Date(2018,5,26,21,30), '' ], 
+      [ 'Food', 'Midnight Snack', '', 'TDB', new Date(2018,5,27,00,00), new Date(2018,5,27,2,00), '' ],
+      [ 'Food', 'Brunch', '', 'TDB', new Date(2018,5,27,9,00), new Date(2018,5,27,12,00), '' ],
+      [ 'Activities', 'Hacker-Sponsor Mingle', '', 'TDB', new Date(2018,5,25,17,00), new Date(2018,5,25,19,00), '' ],
+      [ 'Workshops', 'Dapp Dev Intro', 'Introduction to dapp development with Truffle and Metamask by ConsenSys', 'TDB', new Date(2018,5,25,22,00), new Date(2018,5,25,23,00), 'We\'ll cover the basics of developing for the Ethereum blockchain, starting with running contracts in a local VM, using popular debugging tools, and interacting with deployed contracts from a simple website.  Participants should bring a laptop, and have installed nodejs, the latest version of truffle and the metamask browser extension.' ],
+      [ 'Workshops', 'Chatbots','Chatbots in Banking by TD', 'TDB', new Date(2018,5,25,23,00), new Date(2018,5,26,0,00), '' ],
+      [ 'Workshops', 'AI + Android', 'AI + Android: Make Android Apps more Intelligent using TensorFlow by FDM', 'TDB', new Date(2018,5,26,18,30), new Date(2018,5,26,19,30), 'Interested in Android app development? Make it even more useful using Machine Learning! The aim of this workshop is to learn to embed machine learning into Android apps enabling the apps to be more intelligent.<br><br>Keywords: Native Android App development, Tensor Flow, Artificial Intelligence, Machine Learning.' ],
+      [ 'Workshops', 'HackerEarth', 'How to Submit Project to HackerEarth', 'TBD', new Date(2018,5,27,0,00), new Date(2018,5,27,1,00), 'We\'ll be showing everyone how to submit their project on HackerEarth' ]]);
 
     var options = { timeline: { colorByRowLabel: true}, width: 5000, height: 300, barLabelStyle: {
         fontSize: 80}
@@ -42,14 +45,41 @@ google.charts.load("current", {packages:["timeline"]});
     google.visualization.events.addListener(chart, 'onmouseover', function(e) {
         setTooltipContent(dataTable,e.row);
     });
+
+    google.visualization.events.addListener(chart, 'select', function() {
+        setDescriptionArea(dataTable, chart.getSelection());
+    });
 }
 
 
-function setTooltipContent(dataTable,row) {
-    var duration = Math.abs(dataTable.getValue(row, 4) - dataTable.getValue(row, 3))/ 36e5;
+function setTooltipContent(dataTable,row) {    
+    var tooltip = document.getElementsByClassName("google-visualization-tooltip")[0];
+
     if (row != null) {
-        var content = '<br><div class="custom-tooltip"><b>' +dataTable.getValue(row, 1)+ '<br><br>Location:</b> ' + dataTable.getValue(row, 2) +'<br>'+'<b>Duration:</b> '+ duration+ ' Hours'+ '</div>'; //generate tooltip content
-        var tooltip = document.getElementsByClassName("google-visualization-tooltip")[0];
+        var duration = Math.abs(dataTable.getValue(row, 4) - dataTable.getValue(row, 5))/ 36e5;
+        var name = dataTable.getValue(row, 2) || dataTable.getValue(row, 1);
+        var content = '<br><div class="custom-tooltip"><strong>' + name + '</strong>' +
+            '<br><br><strong>Location:</strong> ' + dataTable.getValue(row, 3) + '<br>' +
+            '<strong>Duration:</strong> '+ duration + ' Hour' + (duration > 1 ? 's' : '') +
+            (dataTable.getValue(row, 6).trim() !== '' ? '<br><br>Click to get more info<br><br>' : '<br><br>') +
+            '</div>'; //generate tooltip content
         tooltip.innerHTML = content;
+        tooltip.style.height = 'auto';
+    }
+}
+
+function setDescriptionArea(dataTable,selected) {
+    var descContainer = document.getElementById('schedule-more-details');
+
+    if (selected.length > 0 && selected[0].row != null) {
+        var row = selected[0].row;
+        var duration = Math.abs(dataTable.getValue(row, 4) - dataTable.getValue(row, 5))/ 36e5;
+        var name = dataTable.getValue(row, 2).trim() || dataTable.getValue(row, 1);
+        var content = '<br><div class="custom-tooltip"><strong>' + name + '</strong>' +
+            '<br><br><strong>Location:</strong> ' + dataTable.getValue(row, 3) + '<br>' +
+            '<strong>Duration:</strong> '+ duration + ' Hour' + (duration > 1 ? 's' : '') +
+            (dataTable.getValue(row, 6).trim() !== '' ? '<br><strong>Description:</strong><br>' + dataTable.getValue(row, 6) : '') +
+            '</div>'; //generate tooltip content
+        descContainer.innerHTML = content;
     }
 }
