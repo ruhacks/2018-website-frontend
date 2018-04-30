@@ -645,6 +645,10 @@ body {
   height: 8em;
 }
 
+.sponsors-section .sponsor-flex-container img#sponsor-jetbrains {
+  height: 16em;
+}
+
 .sponsors-section .sponsor-flex-container img#sponsor-dot-tech,
 .sponsors-section .sponsor-flex-container img#sponsor-hackerearth,
 .sponsors-section .sponsor-flex-container img#sponsor-github,
@@ -671,6 +675,7 @@ body {
 
   .sponsors-section .sponsor-flex-container img {
     height: auto !important;
+    margin: 1.5em 0 1.5em 0;
   }
 
   .sponsors-section .sponsor-flex-container img#sponsor-td {
@@ -691,6 +696,10 @@ body {
     width: 18em;
   }
   
+  .sponsors-section .sponsor-flex-container img#sponsor-jetbrains {
+    width: 14em;
+  }
+
   .sponsors-section .sponsor-flex-container img#sponsor-dot-tech,
   .sponsors-section .sponsor-flex-container img#sponsor-hackerearth,
   .sponsors-section .sponsor-flex-container img#sponsor-github,
