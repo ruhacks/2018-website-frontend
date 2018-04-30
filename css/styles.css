@@ -675,6 +675,7 @@ body {
 
   .sponsors-section .sponsor-flex-container img {
     height: auto !important;
+    margin: 1.5em 0 1.5em 0;
   }
 
   .sponsors-section .sponsor-flex-container img#sponsor-td {
