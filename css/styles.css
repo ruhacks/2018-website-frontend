@@ -672,6 +672,12 @@ body {
   height: 12em;
 }
 
+.sponsors-section .sponsor-flex-container img#sponsor-LUG,
+.sponsors-section .sponsor-flex-container img#sponsor-IEEE
+{
+  height: 8em;
+}
+
 @media (max-width:768px) {
   .sponsors-section img#sponsor-child-play {
     height: auto;
@@ -724,6 +730,12 @@ body {
 
   .sponsors-section .sponsor-flex-container img#sponsor-rss,
   .sponsors-section .sponsor-flex-container img#sponsor-ress
+  {
+    width: 10em;
+  }
+
+  .sponsors-section .sponsor-flex-container img#sponsor-LUG,
+  .sponsors-section .sponsor-flex-container img#sponsor-IEEE
   {
     width: 10em;
   }
