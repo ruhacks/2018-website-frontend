@@ -657,7 +657,9 @@ body {
   
   height: 4em;
 }
-
+.sponsors-section .sponsor-flex-container img#sponsor-FoS{
+  height: 6em;
+}
 .sponsors-section .sponsor-flex-container img#sponsor-ree {
   height: 6em;
 }
@@ -719,7 +721,9 @@ body {
     
     width: 12em;
   }
-  
+  .sponsors-section .sponsor-flex-container img#sponsor-FoS{
+    width: auto;
+  }
   .sponsors-section .sponsor-flex-container img#sponsor-ree {
     width: auto;
   }
