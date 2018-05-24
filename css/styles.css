@@ -631,7 +631,7 @@ body {
   margin-right: auto;
   height: 16em;
 }
-
+.sponsors-section .sponsor-flex-container img#sponsor-thales,
 .sponsors-section .sponsor-flex-container img#sponsor-cibc,
 .sponsors-section .sponsor-flex-container img#sponsor-fdm {
   height: 8em;
@@ -693,6 +693,7 @@ body {
     width: auto;
   }
   
+  .sponsors-section .sponsor-flex-container img#sponsor-thales,
   .sponsors-section .sponsor-flex-container img#sponsor-cibc {
     width: 8em;
   }
