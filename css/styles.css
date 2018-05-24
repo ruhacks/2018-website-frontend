@@ -657,7 +657,7 @@ body {
   
   height: 4em;
 }
-
+.sponsors-section .sponsor-flex-container img#sponsor-FoS,
 .sponsors-section .sponsor-flex-container img#sponsor-ree {
   height: 6em;
 }
@@ -671,7 +671,7 @@ body {
 {
   height: 12em;
 }
-
+.sponsors-section .sponsor-flex-container img#sponsor-cpc,
 .sponsors-section .sponsor-flex-container img#sponsor-LUG,
 .sponsors-section .sponsor-flex-container img#sponsor-IEEE
 {
@@ -719,21 +719,15 @@ body {
     
     width: 12em;
   }
-  
-  .sponsors-section .sponsor-flex-container img#sponsor-ree {
-    width: auto;
-  }
-  
+  .sponsors-section .sponsor-flex-container img#sponsor-FoS,
+  .sponsors-section .sponsor-flex-container img#sponsor-ree,
   .sponsors-section .sponsor-flex-container img#sponsor-recess {
     width: auto;
   }
 
   .sponsors-section .sponsor-flex-container img#sponsor-rss,
-  .sponsors-section .sponsor-flex-container img#sponsor-ress
-  {
-    width: 10em;
-  }
-
+  .sponsors-section .sponsor-flex-container img#sponsor-ress,
+  .sponsors-section .sponsor-flex-container img#sponsor-cpc,
   .sponsors-section .sponsor-flex-container img#sponsor-LUG,
   .sponsors-section .sponsor-flex-container img#sponsor-IEEE
   {
